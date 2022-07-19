@@ -1,5 +1,5 @@
 import React from 'react'
-import {Container, Hr, Img, Item, Login, Logo, Title, Wrapper } from './MenuStyles'
+import {Container, Hr, Img, Item, Login, Logo, Title, Wrapper } from './menu.style'
 import logoImage from '../../public/image/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
@@ -45,7 +45,7 @@ export const Menu = ({darkMode, setDarkMode}:{darkMode: boolean, setDarkMode:Fun
         <Hr />
         <Login>
           Sign in to like videos, comment, and subscribe.
-          <Link href="/signin" style={{textDecoration:"none"}}>
+        <Link href="/signin" style={{textDecoration:"none"}}>
             <Button>
               <AccountCircleOutlinedIcon />
               SIGN IN

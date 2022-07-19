@@ -5,7 +5,7 @@ import { Menu } from '../menu/Menu'
 import { Navbar } from '../navbar/Navbar'
 import { VideoCards } from '../Videos/VideoCards'
 import { darkTheme, lightTheme } from '../../utils/theme'
-import { Container, Main, Wrapper } from '../../pages/indexStyles';
+import { Container, Main, Wrapper } from './layout.style';
 export default function Layout({children}:{children:React.ReactElement}){
     const [darkMode, setDarkMode] = useState(false);
 
@@ -17,7 +17,7 @@ export default function Layout({children}:{children:React.ReactElement}){
         <Navbar />
         <Wrapper>
            { children }
-     </Wrapper>
+        </Wrapper>
       </Main>
     </Container>
     </ThemeProvider>
