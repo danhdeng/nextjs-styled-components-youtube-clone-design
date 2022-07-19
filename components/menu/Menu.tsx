@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Container, Hr, Img, Item, Login, Logo, Title, Wrapper } from './MenuStyles'
+import {Container, Hr, Img, Item, Login, Logo, Title, Wrapper } from './MenuStyles'
 import logoImage from '../../public/image/logo.png';
 import HomeIcon from '@mui/icons-material/Home';
 import ExploreOutlinedIcon from "@mui/icons-material/ExploreOutlined";
@@ -18,6 +18,7 @@ import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import Link from 'next/link';
+import { Button } from '../../utils/styles';
 
 type FunctionTypeSet = (x: boolean) => void;
 
