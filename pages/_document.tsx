@@ -5,10 +5,15 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link
-            href="https://fonts.googleapis.com/css2?family=Inter&display=optional"
-            rel="stylesheet"
-          />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet" /> 
+       <style>
+        {` 
+          {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+          }
+        `}
+      </style>
         </Head>
         <body>
           <Main />
