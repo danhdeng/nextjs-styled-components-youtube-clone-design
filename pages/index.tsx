@@ -9,43 +9,9 @@ import { Container, Main, Wrapper } from './indexStyles'
 
 
 const Home: NextPage = () => {
-  const [darkMode, setDarkMode] = useState(false);
 
   return (
-     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-    <Container>
-      <Menu darkMode={darkMode} setDarkMode={setDarkMode}/>
-      <Main>
-        <Navbar />
-        <Wrapper>
-          <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-            <h1>test</h1>
-           <h1>test</h1>
-        </Wrapper>
-      </Main>
-    </Container>
-    </ThemeProvider>
+    <div>Home</div>
   )
 }
 
