@@ -12,13 +12,12 @@ import SportsBasketballOutlinedIcon from "@mui/icons-material/SportsBasketballOu
 import MovieOutlinedIcon from "@mui/icons-material/MovieOutlined";
 import ArticleOutlinedIcon from "@mui/icons-material/ArticleOutlined";
 import LiveTvOutlinedIcon from "@mui/icons-material/LiveTvOutlined";
-import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import FlagOutlinedIcon from "@mui/icons-material/FlagOutlined";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SettingsBrightnessOutlinedIcon from "@mui/icons-material/SettingsBrightnessOutlined";
 import Link from 'next/link';
-import { Button } from '../../utils/styles';
+import { Signin } from '../signin/Signin';
 
 type FunctionTypeSet = (x: boolean) => void;
 
@@ -30,10 +29,12 @@ export const Menu = ({darkMode, setDarkMode}:{darkMode: boolean, setDarkMode:Fun
           <Img src={logoImage.src} />
           DanTube
         </Logo>
+         <Link href="/">
         <Item>
-          <HomeIcon /> 
-          Home
+            <HomeIcon /> 
+            Home
         </Item>
+          </Link>
           <Item>
           <ExploreOutlinedIcon />
           Explore
@@ -45,12 +46,7 @@ export const Menu = ({darkMode, setDarkMode}:{darkMode: boolean, setDarkMode:Fun
         <Hr />
         <Login>
           Sign in to like videos, comment, and subscribe.
-        <Link href="/signin" style={{textDecoration:"none"}}>
-            <Button>
-              <AccountCircleOutlinedIcon />
-              SIGN IN
-            </Button>
-          </Link>
+          <Signin />
         </Login>
         <Hr />
         <Title>BEST OF DANTUBE</Title>
