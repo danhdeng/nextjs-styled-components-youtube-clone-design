@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 import { ChannelImage, ChannelName, Container, Details, Image, Info, Texts, Title } from './card.style'
+import channelImage from '../../public/image/dantube.png';
 
 function Card({type}:{type:string}) {
   return (
@@ -11,8 +12,8 @@ function Card({type}:{type:string}) {
         </Link>
         <Details type={type}>
           <ChannelImage 
-              type={type} 
-              src="https://yt3.ggpht.com/yti/APfAmoE-Q0ZLJ4vk3vqmV4Kwp0sbrjxLyB8Q4ZgNsiRH=s88-c-k-c0x00ffffff-no-rj-mo"
+              type={type}
+              src={channelImage.src}
               alt=""     
           /> 
           <Texts>
